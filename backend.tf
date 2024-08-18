@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "my-s3-bucket-for-tf-state-austin-texas-from-virginia"
-    key            = "main"
+    bucket         = "terraform-gitlab-cicd-pipeline-backend-galesme"
+    key            = "tfstate"
     region         = "us-east-1"
     dynamodb_table = "my-dynamo-db-table-tf"
   }
