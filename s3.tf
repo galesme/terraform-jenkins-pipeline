@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "my_s3_bucket" {
 }
 
 resource "aws_s3_bucket_acl" "s3_acl" {
-  depends_on = [aws_s3_bucket_ownership_controls.my_s3_bucket]
+  #depends_on = [aws_s3_bucket_ownership_controls.my_s3_bucket]
 
   bucket = aws_s3_bucket.my_s3_bucket.id
   acl    = var.acl
