@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     dir("terraform") {
-                        git "https://github.com/galesme/gitlab-jenkins-pipeline-deployment.git"
+                        git "https://github.com/galesme/terraform-jenkins-pipeline.git"
                     }
                 }
             }
